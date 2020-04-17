@@ -14,4 +14,16 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func customButtonsTouched() {
+        
+    }
+    
+    @IBAction func customTextFieldsTouched() {
+        
+    }
+    
+    @IBAction func customTextViewsTouched() {
+        
+    }
 }
