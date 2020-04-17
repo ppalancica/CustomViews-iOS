@@ -13,6 +13,7 @@
 		B4038D1C244A4AD400E91851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4038D1A244A4AD400E91851 /* Main.storyboard */; };
 		B4038D1E244A4AD700E91851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4038D1D244A4AD700E91851 /* Assets.xcassets */; };
 		B4038D21244A4AD700E91851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4038D1F244A4AD700E91851 /* LaunchScreen.storyboard */; };
+		B4038D2A244A5A1B00E91851 /* CustomButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4038D29244A5A1B00E91851 /* CustomButtonsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B4038D1D244A4AD700E91851 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4038D20244A4AD700E91851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4038D22244A4AD700E91851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4038D29244A5A1B00E91851 /* CustomButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		B4038D13244A4AD400E91851 /* CustomViews-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				B4038D28244A59F800E91851 /* View Controllers */,
 				B4038D14244A4AD400E91851 /* AppDelegate.swift */,
 				B4038D16244A4AD400E91851 /* SceneDelegate.swift */,
 				B4038D18244A4AD400E91851 /* MainViewController.swift */,
@@ -65,6 +68,14 @@
 				B4038D22244A4AD700E91851 /* Info.plist */,
 			);
 			path = "CustomViews-iOS";
+			sourceTree = "<group>";
+		};
+		B4038D28244A59F800E91851 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B4038D29244A5A1B00E91851 /* CustomButtonsViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 				B4038D19244A4AD400E91851 /* MainViewController.swift in Sources */,
 				B4038D15244A4AD400E91851 /* AppDelegate.swift in Sources */,
 				B4038D17244A4AD400E91851 /* SceneDelegate.swift in Sources */,
+				B4038D2A244A5A1B00E91851 /* CustomButtonsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

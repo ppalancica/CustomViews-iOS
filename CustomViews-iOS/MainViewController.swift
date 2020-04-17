@@ -9,6 +9,8 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    
+    private lazy var customButtonsViewController = CustomButtonsViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +18,8 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func customButtonsTouched() {
-        
+        customButtonsViewController = CustomButtonsViewController()
+        navigationController?.pushViewController(customButtonsViewController, animated: true)
     }
     
     @IBAction func customTextFieldsTouched() {
