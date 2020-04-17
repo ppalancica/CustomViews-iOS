@@ -10,12 +10,13 @@ import UIKit
 
 private struct Constants {
     static let leftPadding = 16
-    static let topPadding = 16
+    static let topPadding = 128
 }
 
 class CustomButtonsViewController: UIViewController {
 
     private lazy var simpleButton = makeSimpleButton()
+    private lazy var paddingsButton = makePaddingsButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,7 @@ class CustomButtonsViewController: UIViewController {
         view.backgroundColor = .white
                         
         addSimpleButton()
+        addPaddingsButton()
     }
 }
 
@@ -34,6 +36,15 @@ private extension CustomButtonsViewController {
         let button = UIButton()
         button.backgroundColor = .black
         button.setTitle("Simple Button", for: .normal)
+        button.sizeToFit()
+        return button
+    }
+    
+    private func makePaddingsButton() -> UIButton {
+        let button = UIButton()
+        button.backgroundColor = .black
+        button.setTitle("Paddings Button", for: .normal)
+        button.contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         button.sizeToFit()
         return button
     }
@@ -50,5 +61,16 @@ private extension CustomButtonsViewController {
         )
         
         view.addSubview(simpleButton)
+    }
+    
+    private func addPaddingsButton() {
+        let paddingsButtonSize = paddingsButton.frame.size
+        
+        paddingsButton.frame = CGRect(
+            origin: CGPoint(x: Constants.leftPadding, y: Constants.topPadding + 60),
+            size: paddingsButtonSize
+        )
+        
+        view.addSubview(paddingsButton)
     }
 }
